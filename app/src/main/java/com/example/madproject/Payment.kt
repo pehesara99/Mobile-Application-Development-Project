@@ -74,7 +74,7 @@ class Payment : AppCompatActivity(), RecyclerSavedCardsAdapter.OnItemClickListen
         takeAwayTime = intent?.getStringExtra("takeAwayTime").toString()
 
         totalPaymentTV = findViewById(R.id.total_payment_tv)
-        totalPaymentTV.text = "\$%.2f".format(subTotalPrice)
+        totalPaymentTV.text = "Rs.%.2f".format(subTotalPrice)
 
         cashPaymentRB = findViewById(R.id.cash_payment_radio_btn)
 
@@ -111,7 +111,7 @@ class Payment : AppCompatActivity(), RecyclerSavedCardsAdapter.OnItemClickListen
 
 
 
-        paymentCreditDebitBtn.text = "Pay \$%.2f".format(subTotalPrice)
+        paymentCreditDebitBtn.text = "Pay Rs.%.2f".format(subTotalPrice)
 
 
         confirmPaymentBtn.setOnClickListener { orderDone() }

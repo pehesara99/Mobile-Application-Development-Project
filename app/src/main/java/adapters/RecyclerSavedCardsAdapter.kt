@@ -41,7 +41,7 @@ class RecyclerSavedCardsAdapter(
         holder.cardNumberTV.text = "${cardNo.substring(0,4)} xxxx xxxx ${cardNo.substring(12, 16)}"
         holder.cardHolderNameTV.text = currentItem.cardHolderName
         holder.cardExpDateTV.text = currentItem.cardExpiryDate
-        holder.cardPayBtn.text = "Pay \$%.2f".format(amountToPay)
+        holder.cardPayBtn.text = "Pay Rs.%.2f".format(amountToPay)
 
         if(currentItem.isSelected) {
             holder.cardCVVET.visibility = ViewGroup.VISIBLE

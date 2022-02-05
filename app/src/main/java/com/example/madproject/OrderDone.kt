@@ -105,7 +105,7 @@ class OrderDone : AppCompatActivity() {
     }
 
     private fun saveOrderRecordToDatabase() {
-        val item = OrderHistoryItem(orderDate, orderID, "Order Successful", paymentMethod, "\$%.2f".format(subTotalPrice))
+        val item = OrderHistoryItem(orderDate, orderID, "Order Successful", paymentMethod, "Rs.%.2f".format(subTotalPrice))
         val db = DatabaseHandler(this)
         db.insertOrderData(item)
 
@@ -157,7 +157,7 @@ class OrderDone : AppCompatActivity() {
                 "${orderIDTV.text}\n" +
                 "$paymentMethod\n" +
                 "Order Take-Away Time: $takeAwayTime\n" +
-                "Total Amount: $%.2f".format(subTotalPrice)
+                "Total Amount: Rs.%.2f".format(subTotalPrice)
 
         intent.putExtra(Intent.EXTRA_TEXT, message)
         intent.type = "text/plain"

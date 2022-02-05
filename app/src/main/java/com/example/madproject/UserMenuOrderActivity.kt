@@ -84,10 +84,10 @@ class UserMenuOrderActivity : AppCompatActivity(), RecyclerOrderItemAdapter.OnIt
 
     private fun loadOrderDetails() {
         totalItemsTV.text = "$totalItems items"
-        totalPriceTV.text = "\$%.2f".format(totalPrice)
-        totalTaxTV.text = "\$%.2f".format(totalTax)
-        subTotalTV.text = "\$%.2f".format(totalPrice+totalTax)
-        proceedToPayBtn.text = "Proceed to Pay \$%.2f".format(totalPrice+totalTax)
+        totalPriceTV.text = "Rs.%.2f".format(totalPrice)
+        totalTaxTV.text = "Rs.%.2f".format(totalTax)
+        subTotalTV.text = "Rs.%.2f".format(totalPrice+totalTax)
+        proceedToPayBtn.text = "Proceed to Pay Rs.%.2f".format(totalPrice+totalTax)
     }
 
     private fun loadRecyclerAdapter() {

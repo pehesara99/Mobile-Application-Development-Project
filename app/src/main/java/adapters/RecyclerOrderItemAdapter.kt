@@ -62,7 +62,7 @@ class RecyclerOrderItemAdapter(var context: Context,
         else Picasso.get().load(currentItem.imageUrl).into(holder.itemImageIV)
 
         holder.itemNameTV.text = currentItem.itemName
-        holder.itemPriceTV.text = "$${currentItem.itemPrice}"
+        holder.itemPriceTV.text = "Rs.${currentItem.itemPrice}"
         holder.itemStarsTV.text = currentItem.itemStars.toString()
         holder.itemShortDesc.text = currentItem.itemShortDesc
 
@@ -119,10 +119,10 @@ class RecyclerOrderItemAdapter(var context: Context,
     private fun updateOrderDetails() {
         totalTax = totalPrice * 0.12F
         activityTotalItemTV.text = "$totalItems items"
-        activityTotalPriceTV.text = "\$%.2f".format(totalPrice)
-        activityTotalTaxTV.text = "\$%.2f".format(totalTax)
-        activitySubTotalTV.text = "\$%.2f".format(totalPrice + totalTax)
-        activityProceedToPayBtn.text = "Proceed to Pay \$%.2f".format(totalPrice + totalTax)
+        activityTotalPriceTV.text = "Rs.%.2f".format(totalPrice)
+        activityTotalTaxTV.text = "Rs.%.2f".format(totalTax)
+        activitySubTotalTV.text = "Rs.%.2f".format(totalPrice + totalTax)
+        activityProceedToPayBtn.text = "Proceed to Pay Rs.%.2f".format(totalPrice + totalTax)
     }
 
     fun getTotalItemPrice(): Float = totalPrice
