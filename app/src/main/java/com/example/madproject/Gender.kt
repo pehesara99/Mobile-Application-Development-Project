@@ -19,6 +19,12 @@ class Gender : AppCompatActivity() {
     private lateinit var femaleSelectedBorder: ImageView
 
     private var gender = "male"
+
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gender)

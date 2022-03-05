@@ -49,6 +49,10 @@ class Payment : AppCompatActivity(), RecyclerSavedCardsAdapter.OnItemClickListen
     private lateinit var savedCardsRecyclerAdapter: RecyclerSavedCardsAdapter
     private val savedCardItems = ArrayList<SavedCardItem>()
 
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
     override fun onBackPressed() {
         AlertDialog.Builder(this)
             .setIcon(R.drawable.ic_alert)

@@ -330,7 +330,7 @@
         <ProgressBar
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:indeterminateTint="@color/yellow" />
+            android:indeterminateTint="@color/mid_green" />
 
         <TextView
             android:layout_width="wrap_content"

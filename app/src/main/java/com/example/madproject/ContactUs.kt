@@ -25,7 +25,7 @@ class ContactUs : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        window.statusBarColor = resources.getColor(R.color.yellow)
+        window.statusBarColor = resources.getColor(R.color.mid_green)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

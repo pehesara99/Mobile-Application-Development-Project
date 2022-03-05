@@ -67,7 +67,10 @@ class MainActivity : AppCompatActivity(), RecyclerFoodItemAdapter.OnItemClickLis
     private var doubleBackToExit = false
 
 
-
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
     override fun onBackPressed() {
         if (searchIsActive) {
             //un-hiding all the views which are above the items

@@ -18,7 +18,7 @@ class UserProfile : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        window.statusBarColor = resources.getColor(R.color.yellow_theme_color)
+        window.statusBarColor = resources.getColor(R.color.mid_green)
     }
 
 

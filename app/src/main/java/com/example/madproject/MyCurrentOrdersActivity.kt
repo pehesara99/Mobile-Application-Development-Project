@@ -19,7 +19,10 @@ class MyCurrentOrdersActivity : AppCompatActivity(), currentorder.OnItemClickLis
     private val currentOrderList = ArrayList<CurrentOrderItem>()
     private lateinit var recyclerView: RecyclerView
     private lateinit var recyclerAdapter: currentorder
-
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_current_orders)

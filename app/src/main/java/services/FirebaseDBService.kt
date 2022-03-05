@@ -9,10 +9,6 @@ import interfaces.RequestType
 class FirebaseDBService {
     private var databaseRef: DatabaseReference = FirebaseDatabase.getInstance().reference
 
-
-
-
-
     private val foodMenu = "food_menu"
 
     fun readAllMenu(menuApi: MainActivity, requestType: RequestType) {

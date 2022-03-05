@@ -32,6 +32,10 @@ class OrderDone : AppCompatActivity() {
 
     private var orderID = ""
     private var orderDate = ""
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
 
     override fun onBackPressed() {
         super.onBackPressed()

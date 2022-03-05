@@ -50,6 +50,11 @@ class Register : AppCompatActivity() {
     private lateinit var registerProgressDialog: ProgressDialog
 
     private var doubleBackToExit = false
+
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
     override fun onBackPressed() {
         if(doubleBackToExit) {
             super.onBackPressed()

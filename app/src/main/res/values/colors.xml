@@ -17,6 +17,9 @@
 
     <color name="yellow_enabled_color">#EAB413</color>
     <color name="yellow_disabled_color">#f0cb67</color>
+    <color name="dark_green">#00600f</color>
+    <color name="mid_green">#388e3c</color>
+    <color name="li_green">#6abf69</color>
 
     <color name="light_green">#11C971</color>
 </resources>

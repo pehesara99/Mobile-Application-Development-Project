@@ -21,6 +21,10 @@ class OrderHistoryActivity : AppCompatActivity() {
     private lateinit var recyclerAdapter: RecyclerOrderHistoryAdapter
 
     private lateinit var deleteRecordsIV : ImageView
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

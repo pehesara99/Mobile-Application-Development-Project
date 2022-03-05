@@ -33,6 +33,10 @@ class SettingsActivity : AppCompatActivity(), MenuApi {
     private lateinit var updateMenuLL: LinearLayout
 
     private lateinit var deleteMenuLL: LinearLayout
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)

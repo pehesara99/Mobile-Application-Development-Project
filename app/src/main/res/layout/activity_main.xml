@@ -53,7 +53,7 @@
                 android:layout_height="30dp"
                 android:layout_marginEnd="10dp"
                 android:src="@drawable/ic_search"
-                app:tint="@color/yellow"/>
+                app:tint="@color/dark_green"/>
 
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -85,7 +85,7 @@
                 android:queryHint="eg, Hamburger, Oreo cookie Shake, Burger"
                 android:iconifiedByDefault="false"
                 app:voiceIcon="@drawable/ic_user"
-                app:tint="@color/yellow"/>
+                app:tint="@color/dark_green"/>
 
 
         </LinearLayout>
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="@string/food_categories"
-                        android:textColor="@color/yellow"
+                        android:textColor="@color/dark_green"
                         android:textSize="12sp" />
 
                     <!--Quick Item Selection-->
@@ -410,7 +410,7 @@
                     android:scaleX="0.8"
                     android:scaleY="0.8"
                     android:text="@string/show_all"
-                    app:tint="@color/yellow" />
+                    app:tint="@color/dark_green" />
 
             </LinearLayout>
 
@@ -443,6 +443,7 @@
             android:background="@drawable/left_corner_curve"
             android:onClick="showBottomDialog"
             android:layout_gravity="right"
+            android:backgroundTint="@color/dark_green"
             >
             <ImageView
                 android:layout_width="wrap_content"
@@ -450,6 +451,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="15dp"
                 android:src="@drawable/arrow_upword"
+
                 />
 
 
@@ -469,8 +471,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:itemIconTint="@color/yellow"
-        app:itemTextColor="@color/yellow"
+        app:itemIconTint="@color/dark_green"
+        app:itemTextColor="@color/dark_green"
         app:headerLayout="@layout/nav_header"
         android:scrollbarThumbVertical="@android:color/transparent"
         app:menu="@menu/nav_menu"/>

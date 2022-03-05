@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/circle"
-        app:tint="@color/yellow"/>
+        app:tint="@color/mid_green"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/circle"
-        app:tint="@color/yellow"/>
+        app:tint="@color/mid_green"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:src="@drawable/circle"
-                    app:tint="@color/yellow"/>
+                    app:tint="@color/mid_green"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -116,7 +116,7 @@
                         android:layout_width="@dimen/gender_selection_border_size"
                         android:layout_height="@dimen/gender_selection_border_size"
                         android:src="@drawable/circle"
-                        app:tint="@color/yellow"
+                        app:tint="@color/mid_green"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="@string/male"
-                        android:textColor="@color/yellow"
+                        android:textColor="@color/mid_green"
                         android:fontFamily="@font/montserrat_semi_bold"
                         app:layout_constraintTop_toBottomOf="@id/male_selected_circle"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -159,7 +159,7 @@
                         android:layout_width="@dimen/gender_selection_border_size"
                         android:layout_height="@dimen/gender_selection_border_size"
                         android:src="@drawable/circle"
-                        app:tint="@color/yellow_disabled_color"
+                        app:tint="@color/mid_green"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -182,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="@string/female"
-                        android:textColor="@color/yellow"
+                        android:textColor="@color/dark_green"
                         android:fontFamily="@font/montserrat_semi_bold"
                         app:layout_constraintTop_toBottomOf="@id/female_selected_circle"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -199,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/montserrat_semi_bold"
-                android:backgroundTint="@color/yellow"
+                android:backgroundTint="@color/dark_green"
                 android:text="@string/save"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -224,7 +224,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/circle"
-        app:tint="@color/yellow"/>
+        app:tint="@color/mid_green"/>
 
     <ImageView
         android:layout_width="40dp"
@@ -234,6 +234,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/circle"
-        app:tint="@color/yellow"/>
+        app:tint="@color/mid_green"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

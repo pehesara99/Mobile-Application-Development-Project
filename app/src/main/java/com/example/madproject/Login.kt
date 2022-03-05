@@ -22,6 +22,7 @@ class Login : AppCompatActivity() {
     private lateinit var emailTIL: TextInputLayout
     private lateinit var passwordTIL: TextInputLayout
     private var doubleBackToExit = false
+
     override fun onBackPressed() {
         if (doubleBackToExit) {
             super.onBackPressed()
@@ -49,7 +50,9 @@ class Login : AppCompatActivity() {
         if (user != null && user.isEmailVerified) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
+
         }
+        window.statusBarColor = resources.getColor(R.color.mid_green)
     }
 
     private fun validateEmail(): Boolean {

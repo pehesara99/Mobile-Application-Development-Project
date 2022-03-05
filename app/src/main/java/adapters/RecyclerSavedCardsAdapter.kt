@@ -1,6 +1,7 @@
 package adapters
 
 import android.content.Context
+import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,7 +60,9 @@ class RecyclerSavedCardsAdapter(
             if(validateCVV(holder.cardCVVET.text.toString()))
             listener.onItemPayButtonClick(position)
         }
+
     }
+
 
     private fun validateCVV(cvv: String): Boolean {
         if(cvv.isEmpty()) {
@@ -72,6 +75,8 @@ class RecyclerSavedCardsAdapter(
         }
         return true
     }
+
+
 
     override fun getItemCount(): Int = items.size
 }

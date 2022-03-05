@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/data_saving"
                     android:textStyle="bold"
-                    android:textColor="@color/yellow"
+                    android:textColor="@color/mid_green"
                     android:textSize="15sp"
                     android:layout_marginStart="25dp"/>
 
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/food_menu"
                     android:textStyle="bold"
-                    android:textColor="@color/yellow"
+                    android:textColor="@color/mid_green"
                     android:textSize="15sp"
                     android:layout_marginStart="25dp"/>
 
@@ -201,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/saved_details"
                     android:textStyle="bold"
-                    android:textColor="@color/yellow"
+                    android:textColor="@color/mid_green"
                     android:textSize="15sp"
                     android:layout_marginStart="25dp"/>
 
@@ -274,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/about"
                     android:textStyle="bold"
-                    android:textColor="@color/yellow"
+                    android:textColor="@color/mid_green"
                     android:textSize="15sp"
                     android:layout_marginStart="25dp"/>
 

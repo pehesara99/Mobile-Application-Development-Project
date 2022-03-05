@@ -38,6 +38,10 @@ class UserMenuOrderActivity : AppCompatActivity(), RecyclerOrderItemAdapter.OnIt
     private var totalItems: Int = 0
     private var totalTax: Float = 0F
     private val db = DatabaseHandler(this)
+    override fun onStart() {
+        super.onStart()
+        window.statusBarColor = resources.getColor(R.color.mid_green)
+    }
 
     override fun onBackPressed() {
         AlertDialog.Builder(this)
