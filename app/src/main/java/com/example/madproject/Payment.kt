@@ -215,7 +215,7 @@ class Payment : AppCompatActivity(), RecyclerSavedCardsAdapter.OnItemClickListen
             savedCardRB.isChecked -> paymentMethod = "Paid: $selectedSavedCard"
             creditDebitRB.isChecked -> paymentMethod = "Paid: $enteredCreditDebitCard"
 
-            //netBankingRB.isChecked -> paymentMethod = "Paid: Net Banking"
+
         }
 
         val intent = Intent(this, OrderDone::class.java)

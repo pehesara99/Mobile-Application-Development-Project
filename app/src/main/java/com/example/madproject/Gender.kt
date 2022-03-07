@@ -54,38 +54,38 @@ class Gender : AppCompatActivity() {
     }
     fun onSelectMale(view: View) {
         gender = "male"
-        maleSelectedTV.setTextColor(resources.getColor(R.color.yellow_enabled_color))
-        femaleSelectedTV.setTextColor(resources.getColor(R.color.yellow_disabled_color))
+        maleSelectedTV.setTextColor(resources.getColor(R.color.mid_green))
+        femaleSelectedTV.setTextColor(resources.getColor(R.color.li_green))
 
         maleSelectedBorder.setColorFilter(
             ContextCompat.getColor(
                 this,
-                R.color.yellow_enabled_color
+                R.color.mid_green
             ), android.graphics.PorterDuff.Mode.MULTIPLY
         )
         femaleSelectedBorder.setColorFilter(
             ContextCompat.getColor(
                 this,
-                R.color.yellow_disabled_color
+                R.color.li_green
             ), android.graphics.PorterDuff.Mode.MULTIPLY
         )
     }
 
     fun onSelectFemale(view: View) {
         gender = "female"
-        femaleSelectedTV.setTextColor(resources.getColor(R.color.yellow_enabled_color))
-        maleSelectedTV.setTextColor(resources.getColor(R.color.yellow_disabled_color))
+        femaleSelectedTV.setTextColor(resources.getColor(R.color.mid_green))
+        maleSelectedTV.setTextColor(resources.getColor(R.color.li_green))
 
         femaleSelectedBorder.setColorFilter(
             ContextCompat.getColor(
                 this,
-                R.color.yellow_enabled_color
+                R.color.mid_green
             ), android.graphics.PorterDuff.Mode.MULTIPLY
         )
         maleSelectedBorder.setColorFilter(
             ContextCompat.getColor(
                 this,
-                R.color.yellow_disabled_color
+                R.color.li_green
             ), android.graphics.PorterDuff.Mode.MULTIPLY
         )
     }
